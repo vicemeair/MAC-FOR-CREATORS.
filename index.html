@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080910">
+<meta name="description" content="Aidez à financer un Mac pour créer de meilleures vidéos YouTube. Chaque contribution compte.">
+<title>Mac for Creators — Soutenez la création</title>
+<style>
+:root{color-scheme:dark;--bg:#080910;--panel:#111321;--text:#f7f7fb;--muted:#a3a6b8;--line:#25283a;--violet:#9b7bff;--blue:#65c7ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#29204d 0,transparent 45%),var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+a{color:inherit}.wrap{width:min(1060px,calc(100% - 40px));margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}.brand{font-weight:800;letter-spacing:.13em;font-size:13px}.pill{border:1px solid var(--line);border-radius:99px;padding:8px 14px;color:var(--muted);font-size:12px}
+.hero{text-align:center;padding:86px 0 58px}.eyebrow{color:#c4b5ff;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}.hero h1{font-size:clamp(42px,8vw,82px);line-height:1.02;letter-spacing:-.065em;margin:20px auto;max-width:850px}.gradient{background:linear-gradient(100deg,#fff 10%,#c7b5ff 55%,#78d7ff);color:transparent;background-clip:text}.lead{max-width:620px;margin:0 auto;color:var(--muted);font-size:17px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:14px;padding:14px 22px;font-weight:750;text-decoration:none;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:linear-gradient(110deg,#9a7bff,#63caff);color:#080910}.secondary{border:1px solid var(--line);background:#ffffff08;color:var(--text)}
+.card{background:linear-gradient(145deg,#17192a,#0e101a);border:1px solid #ffffff12;border-radius:24px;padding:28px;box-shadow:0 25px 90px #0005}.progress-card{max-width:690px;margin:0 auto 72px;text-align:left}.progress-top{display:flex;justify-content:space-between;gap:12px;align-items:end}.raised{font-size:36px;font-weight:800;letter-spacing:-.04em}.muted{color:var(--muted)}.bar{height:11px;background:#292b3b;border-radius:20px;overflow:hidden;margin:18px 0 10px}.fill{height:100%;width:0;background:linear-gradient(90deg,#9a7bff,#65c7ff);border-radius:20px}.small{font-size:12px;color:var(--muted)}
+.section{padding:28px 0 76px}.section h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:0 0 12px}.section-intro{color:var(--muted);max-width:650px;margin:0 0 28px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.tile{padding:22px;border:1px solid var(--line);border-radius:18px;background:#ffffff06}.icon{font-size:24px}.tile h3{margin:12px 0 6px}.tile p{margin:0;color:var(--muted);font-size:14px}
+.donate{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}.amounts{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:14px 0}.amount{background:#ffffff08;border:1px solid var(--line);border-radius:12px;padding:12px;color:var(--text);font-weight:700;cursor:pointer}.amount.active{border-color:#a78bfa;background:#9b7bff20}.field{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:0 14px;background:#080a12}.field span{color:var(--muted)}input{width:100%;padding:14px 0;background:transparent;border:0;outline:0;color:white;font-size:17px}.pay{display:grid;gap:10px;margin-top:16px}.pay .btn{width:100%}.notice{font-size:12px;color:var(--muted);margin-top:14px}.foot{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:720px){.hero{padding:55px 0 38px}.grid{grid-template-columns:1fr}.donate{grid-template-columns:1fr}.progress-card{margin-bottom:45px}.card{padding:21px}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">MAC <span class="gradient">FOR CREATORS</span></div><span class="pill">Objectif : 400 €</span></header>
+<main>
+<section class="wrap hero">
+<div class="eyebrow">Un coup de pouce pour aller plus loin</div>
+<h1>De meilleures vidéos.<br><span class="gradient">De nouvelles possibilités.</span></h1>
+<p class="lead">Je crée des vidéos YouTube et j’aimerais investir dans un Mac pour améliorer mon montage, travailler plus efficacement et donner vie à de nouveaux projets. Si tu veux m’aider, chaque participation compte.</p>
+<div class="actions"><a class="btn primary" href="#participer">Soutenir le projet ↗</a><a class="btn secondary" href="#projet">Découvrir le projet</a></div>
+</section>
+<section class="wrap">
+<div class="card progress-card">
+<div class="progress-top"><div><div class="small">CAGNOTTE</div><div class="raised"><span id="raised">0</span> €</div></div><div style="text-align:right"><div class="small">OBJECTIF</div><strong style="font-size:22px">400 €</strong></div></div>
+<div class="bar"><div class="fill" id="fill"></div></div><div class="small"><span id="percent">0</span>% de l’objectif atteint · Le montant collecté sera actualisé régulièrement.</div>
+</div>
+</section>
+<section class="wrap section" id="projet"><h2>Pourquoi ce Mac ?</h2><p class="section-intro">Le but est simple : améliorer la qualité des vidéos et pouvoir produire davantage de contenus, sans perdre de temps avec un matériel limité.</p>
+<div class="grid">
+<article class="tile"><div class="icon">🎬</div><h3>Un meilleur montage</h3><p>Monter plus confortablement, gérer des projets vidéo plus lourds et améliorer le rendu final.</p></article>
+<article class="tile"><div class="icon">⚡</div><h3>Plus de créativité</h3><p>Tester de nouveaux effets, des idées de vidéos et des formats plus ambitieux.</p></article>
+<article class="tile"><div class="icon">🚀</div><h3>Faire grandir la chaîne</h3><p>Consacrer plus de temps à la création et proposer des vidéos toujours plus travaillées.</p></article>
+</div></section>
+<section class="wrap section" id="participer"><div class="donate">
+<div><h2>Chaque euro aide.</h2><p class="section-intro">Tu choisis librement le montant que tu souhaites donner. Même une petite participation ou un simple partage peut faire la différence. Merci !</p><div class="small">Objectif transparent : financer l’achat d’un Mac destiné à la création de vidéos YouTube.</div></div>
+<div class="card"><h3 style="margin-top:0">Choisir ma participation</h3><div class="amounts"><button class="amount" data-value="2">2 €</button><button class="amount active" data-value="5">5 €</button><button class="amount" data-value="10">10 €</button></div>
+<label class="small" for="custom">Ou saisir un autre montant</label><div class="field"><input id="custom" type="number" min="1" max="400" step="1" value="5" inputmode="numeric" aria-label="Montant en euros"><span>EUR</span></div>
+<div class="pay"><a class="btn primary" id="stripe" href="#" aria-disabled="true">Payer par carte / Apple Pay</a><a class="btn secondary" id="paypal" href="#" aria-disabled="true">Participer avec PayPal</a></div>
+<p class="notice">Les paiements seront activés dès que les liens officiels de paiement seront configurés. Ne communique jamais de clé secrète ou de mot de passe sur ce site.</p></div>
+</div></section>
+</main>
+<footer class="wrap foot"><span>© 2026 — Mac for Creators</span><span>Merci de soutenir la création indépendante.</span></footer>
+<script>
+// CONFIGURATION : remplace ces deux valeurs par les liens de paiement officiels créés par le titulaire adulte des comptes.
+const STRIPE_PAYMENT_LINK = "";
+const PAYPAL_PAYMENT_LINK = "";
+// Mets à jour ce montant après vérification des paiements reçus.
+const TOTAL_COLLECTED = 0;
+const goal=400, raised=Math.max(0,Math.min(goal,Number(TOTAL_COLLECTED)||0));
+document.getElementById('raised').textContent=raised.toLocaleString('fr-FR');
+document.getElementById('percent').textContent=Math.round(raised/goal*100);
+document.getElementById('fill').style.width=(raised/goal*100)+'%';
+const input=document.getElementById('custom');
+document.querySelectorAll('.amount').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.amount').forEach(x=>x.classList.remove('active'));b.classList.add('active');input.value=b.dataset.value;}));
+input.addEventListener('input',()=>document.querySelectorAll('.amount').forEach(x=>x.classList.toggle('active',x.dataset.value===input.value)));
+function setupPayment(id,base){const a=document.getElementById(id);if(!base){a.addEventListener('click',e=>{e.preventDefault();alert('Le paiement sera bientôt disponible. Les liens de paiement sécurisés ne sont pas encore configurés.');});return;}a.href=base;}
+setupPayment('stripe',STRIPE_PAYMENT_LINK);setupPayment('paypal',PAYPAL_PAYMENT_LINK);
+</script>
+</body></html>
